@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 import json
+import os
 
 # Configure page
 st.set_page_config(
@@ -64,7 +65,7 @@ if prompt := st.chat_input("How can I help you today?"):
         
         try:
             # Call FastAPI Backend
-            API_URL = "http://localhost:8000/query"
+            API_URL = os.environ.get("API_URL", "http://localhost:8000/query")
             payload = {"query": prompt}
             
             response = requests.post(API_URL, json=payload)
