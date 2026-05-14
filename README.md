@@ -2,7 +2,7 @@
 
 An Agentic AI-powered Student Support System designed for online education platforms. This system leverages CrewAI for multi-agent orchestration, providing a clean architecture for handling student queries, ensuring academic integrity through guardrails, and presenting a user-friendly frontend.
 
-## 🚀 Project Overview
+## Project Overview
 
 The Agentic AI Student Support System acts as a virtual teaching assistant. It can:
 - Provide course guidance and learning paths.
@@ -10,7 +10,7 @@ The Agentic AI Student Support System acts as a virtual teaching assistant. It c
 - Troubleshoot platform technical issues.
 - Escalate unresolved queries intelligently.
 
-## 🏗 Architecture
+## Architecture
 
 The system follows a modular architecture:
 1.  **Frontend (Streamlit):** A minimalistic UI for students to submit queries and view AI responses, complete with risk indicators.
@@ -20,7 +20,7 @@ The system follows a modular architecture:
 5.  **RAG Layer:** Uses LangChain, FAISS, and Gemini embeddings to retrieve relevant contextual data for the agents.
 6.  **Monitoring:** Local JSON logging for auditing and performance tracking.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **Language:** Python
 - **Orchestration:** CrewAI
@@ -30,7 +30,7 @@ The system follows a modular architecture:
 - **RAG:** LangChain + FAISS
 - **Other:** python-dotenv, Pydantic, JSON Logging
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ### 1. Clone the Repository
 \`\`\`bash
@@ -71,7 +71,7 @@ Open a new terminal, activate the virtual environment, and run:
 streamlit run frontend/streamlit_app.py
 \`\`\`
 
-## 🔌 API Usage
+## API Usage
 
 The backend exposes a single main endpoint.
 
@@ -94,7 +94,7 @@ The backend exposes a single main endpoint.
 }
 \`\`\`
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - Replace local JSON logging with an ELK stack or Prometheus/Grafana.
 - Upgrade FAISS to a managed vector database (e.g., Pinecone, Weaviate) for scale.
